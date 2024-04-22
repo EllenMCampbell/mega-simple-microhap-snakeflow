@@ -104,7 +104,7 @@ marker_sets:
       Otsh_v2.0:
         regions: config/Chinook/regions/#Anneregionsfile.txt
         microhap_variants:
-          all_variants: config/Chinook/canonical_variation/#AnneSNPsLocation
+          all_variants: config/Chinook/canonical_variation/#AnneSNPsLocation.vcf
 
 
 
