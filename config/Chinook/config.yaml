@@ -25,6 +25,8 @@ trimmo_opts: "LEADING:2 TRAILING:2 SLIDINGWINDOW:4:2 MINLEN:40"
 genomes:
   Otsh_v1.0:
     url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/872/995/GCF_002872995.1_Otsh_v1.0/GCF_002872995.1_Otsh_v1.0_genomic.fna.gz
+  Otsh_v2.0:
+    url: #Anne add stuff here
 
 
 # here we give details about our marker sets.  Note that a marker
@@ -97,7 +99,12 @@ marker_sets:
         fasta: config/Chinook/target_fastas/chinook_FullPanel_RosaTransition_March2024.fasta
         microhap_variants:
           rosa_microhap_snplicon: config/Chinook/canonical_variation/chinook_FullPanel_ROSATransition_March2024.vcf
-
+  Chrom17:
+    genome:
+      Otsh_v2.0:
+        regions: config/Chinook/regions/#Anneregionsfile.txt
+        microhap_variants:
+          all_variants: config/Chinook/canonical_variation/#AnneSNPsLocation
 
 
 
