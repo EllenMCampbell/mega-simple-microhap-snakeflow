@@ -105,7 +105,6 @@ marker_sets:
         regions: config/Chinook/regions/#Anneregionsfile.txt
         microhap_variants:
           all_variants: config/Chinook/canonical_variation/#AnneSNPsLocation.vcf
-
   ROSAAnne:
     target_fasta:
       rosawr:
