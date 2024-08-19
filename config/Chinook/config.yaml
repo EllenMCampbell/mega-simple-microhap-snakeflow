@@ -110,7 +110,7 @@ marker_sets:
       rosawr:
         fasta: config/Chinook/target_fastas/greb1_rosa_with_wrdiag_reference.fasta
         microhap_variants:
-          all_variants: config/Chinook/canonical_variation/ROSA-rosawr-Anne-SNPs.vcf
+          rosa_anne_variants: config/Chinook/canonical_variation/ROSA-rosawr-Anne-SNPs.vcf
 
 
 
