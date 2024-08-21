@@ -26,7 +26,7 @@ genomes:
   Otsh_v1.0:
     url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/872/995/GCF_002872995.1_Otsh_v1.0/GCF_002872995.1_Otsh_v1.0_genomic.fna.gz
   Otsh_v2.0:
-    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/296/145/GCF_018296145.1_Otsh_v2.0/GCF_018296145.1_Otsh_v2.0_rna.fna.gz 
+    url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/018/296/145/GCF_018296145.1_Otsh_v2.0/GCF_018296145.1_Otsh_v2.0_rna.fna.gz
 
 
 # here we give details about our marker sets.  Note that a marker
@@ -104,7 +104,7 @@ marker_sets:
       Otsh_v2.0:
         regions: config/Chinook/regions/Chrom17-Otsh_v2.0.txt
         microhap_variants:
-        all_variants: config/Chinook/canonical_variation/chrom17_target_snps_w_regions.vcf
+          all_variants: config/Chinook/canonical_variation/chrom17_target_snps_w_regions.vcf
   ROSAAnne:
     target_fasta:
       rosawr:
