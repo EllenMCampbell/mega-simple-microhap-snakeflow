@@ -13,7 +13,7 @@ rule make_microhap_folder:
 #	conda:
 #		"../envs/microhap.yaml"
 	envmodules:
-		"R/4.0.3"  # this is for SEDNA. I can't get a conda-installed R to work
+		env['ohpc'], env['tidyv']  # this is for SEDNA. I can't get a conda-installed R to work
 	script:
 		"../script/create_microhaplot_folder.R"
 
@@ -43,7 +43,7 @@ rule microhap_extract_fullgex_remapped:
 	log:
 		"{run_dir}/{species_dir}/logs/microhap_extract_fullgex_remapped/{marker_set}--{genome}--{microhap_variants}.log"
 	envmodules:
-		"R/4.0.3"  # this is for SEDNA. I can't get a conda-installed R to work
+		env['ohpc'], env['tidyv']  # this is for SEDNA. I can't get a conda-installed R to work
 	threads: 10
 	output:
 		rds="{run_dir}/{species_dir}/microhaplot/{marker_set}--fullgex_remapped_to_thinned--{genome}--{microhap_variants}.rds"
@@ -61,7 +61,7 @@ rule microhap_extract_target_fastas:
 	log:
 		"{run_dir}/{species_dir}/logs/microhap_extract_target_fasta/{marker_set}--{target_fasta}--{microhap_variants}.log"
 	envmodules:
-		"R/4.0.3"  # this is for SEDNA. I can't get a conda-installed R to work
+		env['ohpc'], env['tidyv']  # this is for SEDNA. I can't get a conda-installed R to work
 	threads: 10
 	output:
 		rds="{run_dir}/{species_dir}/microhaplot/{marker_set}--target_fastas--{target_fasta}--{microhap_variants}.rds"

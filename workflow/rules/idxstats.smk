@@ -3,6 +3,7 @@
 
 
 # Here we map the fullg-extracted reads to the thinned genomes.
+
 rule combine_fullgex_remapped_idxstats_into_single_file:
   input:
   	idx=lambda wc: bam_tree_equivalent_files_from_marker_sets(wc, type = "fullgex_remapped", trunk = "idxstats", ext = "_idxstats.txt")
@@ -62,6 +63,6 @@ rule summarise_idxstats:
   log:
     "{run_dir}/{species_dir}/logs/summarise_idxstats/{map_type}/{marker_set}/{tf_or_gen}/log.txt"
   envmodules:
-    "R/4.0.3" 
+    env['ohpc'], env['tidyv']
   script:
     "../script/summarize-idxstats.R"

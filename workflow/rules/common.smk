@@ -2,7 +2,6 @@ import pandas as pd
 from snakemake.utils import validate
 from glob import glob
 
-
 #### Global wildcard constraints ####
 #wildcard_constraints:
 #    run_dir = "^(?!.*MULTI_RUN_RESULTS.*)"
@@ -46,6 +45,8 @@ tflist = units["Markers"].isin(tf_markers)
 gf_units = units[gflist == True]
 tf_units = units[tflist == True]
 
+# envrionment modules
+env = config['env']
 
 #### Functions for turning wildcards into input values ####
 

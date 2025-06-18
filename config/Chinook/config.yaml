@@ -26,6 +26,11 @@ genomes:
   Otsh_v1.0:
     url: https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/872/995/GCF_002872995.1_Otsh_v1.0/GCF_002872995.1_Otsh_v1.0_genomic.fna.gz
 
+#Testing adding env modules here
+env:
+  ohpc: "ohpc"
+  tidyv: "tidyverse/2.0.0"
+#  R: "R/4.3.0"
 
 # here we give details about our marker sets.  Note that a marker
 # set can be both genome-focused and target_fasta-focused, as

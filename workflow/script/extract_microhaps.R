@@ -10,6 +10,7 @@ sink(log, type = "message")
 # get the run_dir,  and then create a microhaplot directory
 # there with the Shiny elements in it.
 
+.libPaths(c("~/R/library", .libPaths()))
 
 
 

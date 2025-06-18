@@ -7,7 +7,7 @@ sink(log, type = "message")
 # there with the Shiny elements in it.
 
 run_dir = snakemake@params$rd
-
+.libPaths(c("~/R/library", .libPaths()))
 
 inst_packs <- rownames(installed.packages())
 if(!("dplyr" %in% inst_packs)) {
